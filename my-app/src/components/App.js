@@ -1,8 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
+import { AuthProvider } from "../contexts/AuthContxt";
+import SignUpPage from "./SignUpPage";
 
 function App() {
-  return "hello"
+  return (
+    <AuthProvider>
+      <SignUpPage />
+    </AuthProvider>
+  )
 }
 
-export default App;
+export default App
